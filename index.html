@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login form</title>
-  </head>
-  <body>
-    <h1>hello world</h1>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <style>
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        }
+        th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        }
+        th {
+        background-color: #f2f2f2;
+        }
+        </style>
+        <h2>Table with Combined Colspan and Rowspan</h2>
+        <table>
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th colspan="2">Location</th>
+        </tr>
+        <tr>
+        <td rowspan="2">John Doe</td>
+        <td>30</td>
+        <td>New York</td>
+        <td>USA</td>
+        </tr>
+        <tr>
+        <td>31</td>
+        <td>San Francisco</td>
+        <td>USA</td>
+    </tr>
+    <tr>
+    <td>Jane Smith</td>
+    <td>25</td>
+    <td colspan="2">Los Angeles, USA</td>
+    </tr>
+    <tr>
+    <td>Mike Johnson</td>
+    <td>35</td>
+    <td>Chicago</td>
+    <td>USA</td>
+    </tr>
+    </table>
+</body>
 </html>
