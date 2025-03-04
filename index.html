@@ -3,52 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Form</title>
 </head>
 <body>
-    <style>
-        table {
-        width: 100%;
-        border-collapse: collapse;
-        }
-        th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-        }
-        th {
-        background-color: #f2f2f2;
-        }
-        </style>
-        <h2>Table with Combined Colspan and Rowspan</h2>
-        <table>
-        <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th colspan="2">Location</th>
-        </tr>
-        <tr>
-        <td rowspan="2">John Doe</td>
-        <td>30</td>
-        <td>New York</td>
-        <td>USA</td>
-        </tr>
-        <tr>
-        <td>31</td>
-        <td>San Francisco</td>
-        <td>USA</td>
-    </tr>
-    <tr>
-    <td>Jane Smith</td>
-    <td>25</td>
-    <td colspan="2">Los Angeles, USA</td>
-    </tr>
-    <tr>
-    <td>Mike Johnson</td>
-    <td>35</td>
-    <td>Chicago</td>
-    <td>USA</td>
-    </tr>
-    </table>
+    <form action="/submit-form" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+        <br>
+     <p>Please select your gender</p>
+     <input type="radio" id="male" name="gender" value="male">
+     <label for="male">Male</label><br>
+     <input type="radio" id="female" name="gender" value="female">
+     <label for="female">Female</label><br>
+     <br><br>
+     <p>Please select your hobbies :</p>
+     <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+     <label for="hobby1">Reading</label><br>
+     <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+     <label for="hobby2">Traveling</label><br>
+     <input type="checkbox" id="hobby3" name="hobbies" value="cooking">
+     <label for="hobby3">cooking</label><br>
+     <input type="submit" value="submit"><br>
+     <br>
+     <input type="reset" value="Reset"><br>
+    </form>
 </body>
 </html>
